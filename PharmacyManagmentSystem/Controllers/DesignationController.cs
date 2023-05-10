@@ -23,18 +23,7 @@ namespace PharmacyManagmentSystem.Controllers
 
         // GET: /Designation/Details/5
         public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            designation designation = db.designations.Find(id);
-            if (designation == null)
-            {
-                return HttpNotFound();
-            }
-            return View(designation);
-        }
+
 
         // GET: /Designation/Create
         public ActionResult Create()
